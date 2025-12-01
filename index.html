@@ -11,7 +11,10 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
+      display: flex;
+      justify-content: center;
     }
+
     h1 {
       color: #fff;
       text-align: center;
@@ -21,7 +24,14 @@
       position: sticky;
       top: 0;
       z-index: 10;
+      width: 100%;
     }
+
+    .gallery-container {
+      width: 100%;
+      max-width: 960px;
+    }
+
     .gallery {
       display: flex;
       flex-direction: column;
@@ -29,26 +39,32 @@
       gap: 40px;
       padding: 40px 0;
     }
+
     .gallery img {
-      width: 90vw;
-      max-width: 1600px;
+      width: auto;
+      max-width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      display: block;
+      image-rendering: auto;
     }
   </style>
 </head>
-<body>
-  <h1>Calibrationator Image Gallery</h1>
 
-  <div class="gallery">
-    <img src="CalibrationatorBox.jpg" alt="CalibrationatorBox" />
-    <img src="CalibrationatorBox (1).jpg" alt="CalibrationatorBox 1" />
-    <img src="CalibrationatorBox (2).jpg" alt="CalibrationatorBox 2" />
-    <img src="CalibrationatorBox (3).jpg" alt="CalibrationatorBox 3" />
-    <img src="CalibrationatorBox (4).jpg" alt="CalibrationatorBox 4" />
-    <img src="CalibrationatorBox (5).jpg" alt="CalibrationatorBox 5" />
-    <img src="CalibrationatorBox (6).jpg" alt="CalibrationatorBox 6" />
+<body>
+  <div class="gallery-container">
+    <h1>Calibrationator Image Gallery</h1>
+
+    <div class="gallery">
+      <img src="CalibrationatorBox.jpg" alt="CalibrationatorBox" />
+      <img src="CalibrationatorBox (1).jpg" alt="CalibrationatorBox 1" />
+      <img src="CalibrationatorBox (2).jpg" alt="CalibrationatorBox 2" />
+      <img src="CalibrationatorBox (3).jpg" alt="CalibrationatorBox 3" />
+      <img src="CalibrationatorBox (4).jpg" alt="CalibrationatorBox 4" />
+      <img src="CalibrationatorBox (5).jpg" alt="CalibrationatorBox 5" />
+      <img src="CalibrationatorBox (6).jpg" alt="CalibrationatorBox 6" />
+    </div>
   </div>
 </body>
 </html>
